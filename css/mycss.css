@@ -1,0 +1,305 @@
+body
+{
+	background-color: #04151F;
+	overflow-x: hidden;
+  overflow-y: hidden;
+}
+#cover
+{
+  background-color:  #04151F;
+}
+.main-cont
+{
+	padding: 30px;
+  background-color: #04151F;
+  min-height: 100%;
+}
+.login
+{
+	text-align: center;
+	padding-top: 80px;
+	color: white;
+}
+.login h1
+{
+	font-family: 'Russo One', sans-serif;
+	font-size:50px;
+}
+.login h2
+{
+	font-family: 'Righteous', cursive;
+}
+#overlayer {
+  width:100%;
+  height:100%;  
+  position:fixed;
+  z-index:999;
+  background:rgba(4,21,31,0.99);
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  z-index:3;
+  border: 4px solid #Fff;
+  top: 50%;
+  animation: loader 2s infinite ease;
+  z-index: 999;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+  z-index: 999;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
+.txt
+{
+	height: 40px;
+	width: 300px;
+	border:0px;
+	border-bottom: 2px solid white;
+	background-color: transparent;
+	margin-top: 30px;
+}
+.txt:focus
+{
+	outline: none;
+}
+.submit-btn
+{
+	margin-top: 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 5px;
+	width: 100px;
+	margin-bottom: 50px;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	transition:all 0.5s;
+}
+.submit-btn:focus
+{
+	outline: none;
+	background-color: white;
+	color: black;
+}
+.submit-btn:hover
+{
+	background-color: white;
+	color: black;
+}
+.nxt-btn
+{
+	border:2px solid white;
+	background-color: transparent;
+	width: 100px;
+	padding: 10px;
+}
+.nxt-btn:focus
+{
+	outline: none;
+}
+.nxt-btn:hover
+{
+	background-color: white;
+	color: black;	
+}
+.about
+{
+	color: white;
+	position: absolute;
+	font-family: 'Play', sans-serif;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	font-weight:100;
+	font-size: 14px;
+	margin-top: -500px;
+
+}
+.typed-cursor{
+   opacity: 0;
+   -webkit-animation-name: blink;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.timer
+{
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-weight:100;
+  font-size: 14px;
+  color: white;
+  color:rgb(16,78,139);
+}
+.about h5
+{
+  font-family: 'Play', sans-serif;
+  /*Next Prize awaits you here. 'size_doesnt_matters' is your key*/
+}
+.play
+{
+  border:2px solid rgb(205,149,12);
+  background-color: transparent;
+  margin-top: 30px;
+  padding: 5px;
+  font-size: 12px;
+  width: 100px;
+  border-radius: 2px;
+  -webkit-transition:all 0.5s;
+}
+.play:focus
+{
+  outline: none;
+}
+.play:hover
+{
+  background-color: rgb(205,149,12);
+}
+.modal .modal-content
+{
+  min-height: 300px;
+  padding: 50px;
+  line-height: 30px;
+}
+.answer-input
+{
+  width: 100%;
+  margin-top: 20px;
+  border:0px;
+  border-bottom: 2px solid rgb(16,78,139);
+}
+.answer-input:focus
+{
+  outline: none;
+}
+.answer-btn
+{
+  margin-top: 30px;
+  border:3px solid rgb(205,149,12);
+  padding: 5px;
+  background-color: transparent;
+  height: 40px;
+  width: 150px;
+}
+.green
+{
+  background-color: #458B00;
+  color: white;
+}
+.red
+{
+  background-color: #CD5555;
+  color: white;
+}
+#fullscreen .modal-dialog 
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+}
+#fullscreen .modal-content 
+{
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  padding: 0px;
+  background-color: #04151F;
+  text-align: center;
+  padding: 50px;
+  z-index: 99;
+}
+#fullscreen h1 span
+{
+  color:rgb(16,78,139);
+  font-family: 'Play', sans-serif;
+}
+#fullscreen2 .modal-dialog 
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+}
+#fullscreen2 .modal-content 
+{
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  padding: 0px;
+  background-color: #04151F;
+  text-align: center;
+  padding: 50px;
+  z-index: 99;
+}
+#fullscreen2 h1 span
+{
+  color:rgb(16,78,139);
+  font-family: 'Play', sans-serif;
+}
